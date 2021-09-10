@@ -9,13 +9,53 @@ class App extends Component{
            return (
               <Router>
                <PageWrap>
-                <Route
-                path="/Home"
+                <Route exact
+                path="/"
                 component={Home}
                 />
-                <Route
+                <Route 
                 path="/documentation"
                 component={Documentation}
+                />
+                <Route
+                path="/expert"
+                 render={()=>
+                {
+                  return (
+                    <div>Under Construction</div>
+                  )
+                }}
+                
+                />
+                 <Route
+                path="/download"
+                 render={()=>
+                {
+                  return (
+                    <div>Under Construction</div>
+                  )
+                }}
+                
+                />
+                
+                 <Route
+                path="/blog"
+                 render={()=>
+                {
+                  return (
+                    <div>Under Construction</div>
+                  )
+                }}
+                
+                />
+                  <Route
+                path="/version"
+                 render={()=>
+                {
+                  return (
+                    <div>Under Construction</div>
+                  )
+                }}
                 />
                </PageWrap>
                </Router>

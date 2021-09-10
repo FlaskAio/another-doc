@@ -5,11 +5,11 @@ class Header extends Component{
     {
         return(
             <div>
-            <header className="masthead" >
+            <header className="masthead" style={{backgroundImage:`url(${this.props.image})`}} >
                 <div className="container">
                     <div className="masthead-subheading">{this.props.title}</div>
                     <div className="masthead-heading text-uppercase">{this.props.subtitle}</div>
-                    <Link className="btn btn-primary btn-xl text-uppercase" to="/services">{this.props.buttonText}</Link>
+                    <Link className="btn btn-primary btn-xl text-uppercase" to="/download">{this.props.buttonText}</Link>
                 </div>
             </header>
            </div>
